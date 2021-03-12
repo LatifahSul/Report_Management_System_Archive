@@ -1,0 +1,42 @@
+<HTML>
+    <HEAD>
+    <TITLE>Report Management System</TITLE>
+    <SCRIPT> 
+    var counter = 1;
+var limit = 10;
+var groupname="";
+function addInput(divName){
+     if (counter == limit)  {
+          alert("You have reached the limit of adding " + counter + " inputs");
+     }
+     else {
+          var newdiv = document.createElement('div');
+          var id = "Permission"+(counter);
+         
+          if(counter == 1){
+               groupname = (document.getElementById(id).value);
+          }else{
+               groupname = groupname +"," +(document.getElementById(id).value);
+          }
+
+          alert("groupname>>"+groupname);
+          newdiv.innerHTML = "Permission " + (counter + 1) + " ";
+          var newInput = document.createElement('input');
+          newInput.id = "Permission"+(counter + 1);
+
+          document.getElementById(divName).appendChild(newdiv);
+          document.getElementById(divName).appendChild(document.createElement('b'));
+          document.getElementById(divName).appendChild(newInput);
+          counter++;
+     }
+}//end-funtion
+     </SCRIPT>
+    </HEAD>
+    <BODY>
+        <div id="input1">
+            <label>Permission 1</label>
+            <input type='text' placeholder='Permission Name' id='Permission1' name='permissions'>
+            </div>
+            <button onclick="addInput('input1')">add</button>
+    </BODY>
+    </HTML>

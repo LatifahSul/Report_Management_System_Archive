@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="mainstyle.css"> 
+        <style type="text/css">
+            body{
+              background-image: url("background.jpg");
+                background-size: cover;
+            }
+
+            #title p{
+                border: 10px;
+                padding: 5px 20px;
+                width: 500px;
+                color: whitesmoke;
+                text-align: left;
+                margin-left: 80px;
+                margin-top: 180px;
+                font-family: 'Merriweather', serif;
+                font-size: 400%;
+            }
+            
+            .popup{
+              float: left;
+              position: relative;
+              display: inline-block;
+              cursor: pointer;
+            }
+
+            .popup .popuptext {
+              visibility: hidden;
+              width: 160px;
+              background-color: #555;
+              color: #fff;
+              text-align: left;
+              border-radius: 6px;
+              padding: 8px 0;
+              position: absolute;
+              z-index: 1;
+              bottom: 125%;
+              left: 150%;
+              margin-left: -80px;
+              }
+             
+           .popup .show {
+              visibility: visible;
+              -webkit-animation: fadeIn 1s;
+              animation: fadeIn 1s;
+            }
+          @-webkit-keyframes fadeIn {
+              from {opacity: 0;} 
+              to {opacity: 1;}
+           }
+          @keyframes fadeIn {
+              from {opacity: 0;}
+              to {opacity:1 ;}
+           }
+        </style>
+    </head>
+    <body>
+        <header class="row">
+          <div class="column">
+            <img src="leaf-white.PNG" height="30" width="30" alt="image not found"/>
+        </div>
+        <ul>
+             <li><a class="active" href="home.html">HOME</a></li>
+            <li> <a href="logout.php" class="btn btn-danger">Log out</a></li>
+          </ul>
+        </header>
+
+        <div>
+          <div id="title">
+            <p>Report Management System Archive</p>
+        </div>
+       
+    </body>
+</html>

@@ -1,0 +1,49 @@
+.active{
+    color: gray;
+}
+
+.column {
+    float: left;
+    padding: 25px;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .row ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 25px;
+    overflow: hidden;
+}
+
+.row li {
+    float: left;
+}
+
+.row li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+}
+
+.row li a:hover {
+    color:  gray;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 6%;
+    background-color: black;
+    color: white;
+    text-align: left;
+  }
